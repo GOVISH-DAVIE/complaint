@@ -1,0 +1,333 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn-teal {
+    background-color: teal;
+    color: white;
+    border: solid 2px;
+}
+
+.input-area {
+    color: black;
+    background-color: white;
+    border: solid 2px teal;
+    box-shadow: none;
+}
+
+.input-area:focus,
+.input-area:active {
+    background-color: white;
+}
+
+.txt-link {
+    text-decoration: none !important;
+    color: black;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: white;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 270px;
+    max-width: 270px;
+    background: teal;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    /* padding: 20px; */
+    background: teal;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid teal;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: teal;
+    background: #fff;
+}
+
+#sidebar ul li.active {
+    color: teal;
+    background: white;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: teal;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: teal;
+}
+
+a.article,
+a.article:hover {
+    background: teal !important;
+    color: #fff !important;
+}
+
+
+.text-post {
+    color: black;
+
+}
+
+textarea {
+    margin-top: 10px;
+    width: 500px;
+    height: 100px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    transition: background-color 0.2s ease 0s;
+}
+
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+/**************************************************************
+Image Upload
+*************************************************************/
+
+.image-input {
+    text-align: center;
+}
+
+.image-input input {
+    display: none;
+}
+
+.image-preview {
+    height: 215px;
+    width: 215px;
+}
+
+.image-input label {
+    display: block;
+    color: white;
+    background: #000;
+    padding: .3rem .6rem;
+    font-size: 115%;
+    cursor: pointer;
+}
+
+.iconImage {
+    width: 100%;
+    height: 100%;
+}
+
+.image-input label:hover i {
+    animation: shake .35s;
+}
+
+.image-input img {
+    max-width: 175px;
+    display: none;
+}
+
+.image-input span {
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+imgPost {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.btn-primary:hover {
+    color: teal;
+    background-color: white;
+    border: 2px solid teal;
+}
+
+
+.btn-info {
+    color: white;
+    background-color: teal;
+    border: solid 2px teal;
+    box-shadow: none;
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus {
+    color: teal;
+    background-color: white;
+    border: 2px solid teal;
+    box-shadow: none;
+}
+
+.modalTextArea{
+    width: 100%;
+}
